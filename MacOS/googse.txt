@@ -1,0 +1,100 @@
+REM Download and execute anoying goose
+
+DELAY 1000
+GUI SPACE
+DELAY 500
+STRING terminal
+DELAY 500
+ENTER
+DELAY 750
+
+STRING open -a "Google Chrome" https://samperson.itch.io/desktop-goose
+ENTER
+
+REM wait for the page to load
+DELAY 10000
+
+REM go to the download button
+TAB
+DELAY 100
+TAB
+DELAY 100
+TAB
+DELAY 100
+TAB
+DELAY 100
+TAB
+DELAY 100
+TAB
+DELAY 100
+ENTER
+
+REM navigating modal
+DELAY 500
+TAB
+DELAY 100
+TAB
+DELAY 100
+ENTER
+
+REM navigating download page
+DELAY 2000
+TAB
+DELAY 100
+TAB
+DELAY 100
+TAB
+DELAY 100
+TAB
+DELAY 100
+TAB
+DELAY 100
+TAB
+DELAY 100
+TAB
+DELAY 100
+TAB
+DELAY 100
+TAB
+DELAY 100
+TAB
+DELAY 100
+TAB
+DELAY 100
+TAB
+DELAY 100
+ENTER
+
+REM download delay
+DELAY 5000
+
+REM REM close current tab
+GUI W
+DELAY 100
+
+REM REM open the terminal
+DELAY 1000
+GUI SPACE
+DELAY 500
+STRING terminal
+DELAY 500
+ENTER
+DELAY 750
+
+REM
+STRING cd ~/Downloads
+ENTER
+DELAY 100
+
+STRING rm -rf GooseFolder && unzip Desktop\ Goose\ for\ Mac\ v0.22.zip -d GooseFolder && open -n GooseFolder/Desktop\ Goose.app
+ENTER
+DELAY 2000
+ENTER
+
+DELAY 300
+
+GUI TAB
+
+DELAY 300
+GUI W
+

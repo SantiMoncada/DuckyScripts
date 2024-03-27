@@ -1,0 +1,8 @@
+REM Title: Open a web browser and navigate to Rick Roll video
+REM Author: Santiago
+REM Description: This script opens the default web browser and navigates to a Rick Astley video on YouTube.
+
+GUI r
+DELAY 500
+STRING https://www.youtube.com/watch?v=uHgt8giw1LY
+ENTER
